@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../Styles/NavBar.css";
+import { Link } from 'react-router-dom';
 
 import {
     faCartShopping,
@@ -16,8 +17,9 @@ const NavBar = () => {
         </div>
 
         <div className='icons'>
-            <FontAwesomeIcon icon={faCircleUser} className='icon'/>
-            <FontAwesomeIcon icon={faCartShopping} className='icon' />
+          <Link to="/MyProfile"><FontAwesomeIcon icon={faCircleUser} className='icon'/></Link>
+          <Link to="/MyCart"><FontAwesomeIcon icon={faCartShopping} className='icon' /></Link>
+            
 
         </div>
 

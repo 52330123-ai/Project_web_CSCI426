@@ -1,10 +1,10 @@
 import React from 'react'
 import "../Styles/Card.css";
-const Card = ({image , type , name , price }) => {
+const Card = ({image , category , name , price }) => {
   return (
     <div className='card'>
         <img src={image} alt="error" />
-        <p>{type}</p>
+        <p>{category}</p>
         <h2>{name}</h2>
         <h3>${price}</h3>
         <button>Add to Cart</button>

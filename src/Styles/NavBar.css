@@ -1,23 +1,22 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(246, 241, 241);
-    color: black;
+    background-color: white;
     align-items: center;
     box-sizing: border-box;
     width: 100%;
     height: 50px;
     border-bottom: black solid 1px;
+    color: black;
 }
 .title{
     padding-left: 30px;
 }
 .icons{
-    padding-right: 30px;
+  padding-right: 30px;
   gap: 12px;
   align-items: center;
   display: flex;
-
 }
 .icon:hover{
     transform: translateY(-5px);

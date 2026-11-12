@@ -4,7 +4,7 @@ import Card from '../Components/Card';
 import image1 from "../assets/image.png";
 const ShopProduct = () => {
   const products =[
-    {image:image1 , type:"Electronic" ,name:"AeroPulse Headphones",price:129.99 },
+    {image:image1 , category:"Electronic" ,name:"AeroPulse Headphones",price:129.99 },
   ];
   return (
     <div className='shop-product'>
@@ -15,7 +15,9 @@ const ShopProduct = () => {
 
       <div>
         {products.map((props)=>(
-          <Card image={props.image} type={props.type} name={props.name} price={props.price} />
+          <div key={props.id}>
+            <Card image={props.image} category={props.category} name={props.name} price={props.price} />
+          </div>
         )
 
         )
