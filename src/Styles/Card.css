@@ -1,0 +1,49 @@
+.card{
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    background-color: gray;
+    border-radius: 20px;
+
+
+    img{
+      width: 250px;
+      height: 200px;
+      padding-bottom: 15px;
+    }
+
+    p{
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: auto;
+    }
+
+    h2{
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    h3{
+        padding-top: 15px;
+       text-align: center;
+       padding-bottom: 15px;
+    }
+
+    button{
+        padding: 10px;
+        color: white;
+        background-color: blue;
+        border-radius: 10px;
+        align-items: center;
+         width: 200px;
+         margin-left: 20px;
+        
+    }
+    button:hover{
+        color: blue;
+        background-color: white;
+    }
+
+
+}
