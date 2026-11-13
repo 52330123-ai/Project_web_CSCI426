@@ -44,8 +44,6 @@ const MyCart = ({ cart, setCart }) => {
           <div className="order-summary">
             <h2>Order Summary</h2>
 
-            <p>Subtotal: ${totalPrice.toFixed(2)}</p>
-
             <hr />
 
             <h3>Total: ${totalPrice.toFixed(2)}</h3>
