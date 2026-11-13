@@ -6,11 +6,14 @@
     box-sizing: border-box;
     width: 100%;
     height: 50px;
-    border-bottom: black solid 1px;
-    color: black;
+    border-bottom: #1e293b solid 1px;
+    color: #1e293b;
 }
 .title{
     padding-left: 30px;
+    h1{
+         color: #1e293b;
+    }
 }
 .icons{
   padding-right: 30px;
@@ -18,6 +21,13 @@
   align-items: center;
   display: flex;
 }
+.icon{
+      padding: 10px;
+     border:#1e293b solid 1px;
+     border-radius: 15px;
+     color: #1e293b;
+}
 .icon:hover{
     transform: translateY(-5px);
 }
+

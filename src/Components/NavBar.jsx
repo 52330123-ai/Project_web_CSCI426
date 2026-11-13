@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import {
     faCartShopping,
     faCircleUser
- 
 } from '@fortawesome/free-solid-svg-icons';
 const NavBar = () => {
   return (
@@ -19,8 +18,7 @@ const NavBar = () => {
         <div className='icons'>
           <Link to="/MyProfile"><FontAwesomeIcon icon={faCircleUser} className='icon'/></Link>
           <Link to="/MyCart"><FontAwesomeIcon icon={faCartShopping} className='icon' /></Link>
-            
-
+    
         </div>
 
     </div>
