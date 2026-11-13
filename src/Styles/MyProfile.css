@@ -1,0 +1,45 @@
+.title-profile {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  color: #1e293b;
+}
+
+.summary-profile {
+  margin: 30px;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
+  border: solid 1px #1e293b;
+  border-radius: 15px;
+  color: #cbd5e1;
+  background-color: #1e293b;
+
+  h3,
+  p {
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #cbd5e1;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: blue;
+  }
+}
+.summary-profile a:hover {
+  color: blue;
+  background-color: #1e293b;
+}
+.selected-product{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #cbd5e1;
+    background-color:#1e293b ;
+}

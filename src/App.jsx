@@ -7,7 +7,8 @@ import ShopProduct from "./Pages/ShopProduct";
 import MyCart from "./Pages/MyCart";
 import MyProfile from "./Pages/MyProfile";
 import Contact from "./Pages/Contact";
-// create fuction addToCart to add product to cart and pass it as props to ShopProduct component
+import AboutUs from "./Pages/AboutUs";
+import Footer from "./Components/Footer";
 const App = () => {
   const [Cart, setCart] = useState([]);
   const addToCart = (product) => {
@@ -29,11 +30,13 @@ const App = () => {
                 path="MyCart"
                 element={<MyCart cart={Cart} setCart={setCart} />}
               />
-              <Route path="MyProfile" element={<MyProfile />} />
+              <Route path="MyProfile" element={<MyProfile cart={Cart} setCart={setCart}/>} />
               <Route path="Contact" element={<Contact />} />
+              <Route path="AboutUs" element={<AboutUs />} />
             </Routes>
           </div>
         </div>
+        <Footer />
       </Router>
     </div>
   );

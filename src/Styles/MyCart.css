@@ -2,10 +2,6 @@
   padding: 30px;
 }
 
-.my-cart h1 {
-  font-size: 32px;
-  margin-bottom: 30px;
-}
 
 .cart-products {
   display: flex;
@@ -54,10 +50,11 @@
 .order-summary {
   width: 260px;
   padding: 25px;
-  background-color: #f8f6ef;
+  background-color: #1e293b;
   border-radius: 20px;
   border: 1px solid #eeeeee;
   height: fit-content;
+  color: #cbd5e1;
 }
 
 .order-summary h2 {
@@ -69,5 +66,29 @@
 }
 
 .order-summary h3 {
+  margin-top: 20px;
+}
+.delete{
+  background-color: red;
+  color: white;
+  border: red 1px solid;
+}
+.delete:hover{
+  background-color: white;
+  color: red;
+  border: white 1px solid;
+}
+.tshop{
+  text-decoration: none;
+  color: black;
+   font-size: 32px;
+  font-weight: bold;
+  
+}
+.tshop:hover{
+  color: red;
+}
+
+.empty-cart{
   margin-top: 20px;
 }

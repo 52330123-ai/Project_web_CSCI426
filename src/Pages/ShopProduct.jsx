@@ -6,7 +6,7 @@ import wallet from "../assets/wallet.png";
 import DriftEverydayBottle from "../assets/DriftEverydayBottle.png";
 import Smartwatch from "../assets/Smartwatch.png";
 import Velora from "../assets/velora.png";
-import react, { useState } from "react";
+import  { useState } from "react";
 const ShopProduct = ({ addToCart }) => {
   const products = [
     {
@@ -56,7 +56,7 @@ const ShopProduct = ({ addToCart }) => {
   return (
     <div className="shop-product">
       <h1 className="shop-title">Shop Products</h1>
-      <input className="shop-input" type="text" placeholder="Search product" />
+      <input className="shop-input" type="text" placeholder="Search product..." />
 
       <div className="categories">
         {categories.map((category) => (

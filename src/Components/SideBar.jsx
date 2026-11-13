@@ -6,7 +6,8 @@ import {
  faCartShopping,
  faBagShopping,
   faCircleUser,
-faAddressCard
+faAddressCard,
+faCircleInfo,
 } from '@fortawesome/free-solid-svg-icons';
 const SideBar = () => {
   return (
@@ -30,10 +31,17 @@ const SideBar = () => {
           <span>My Profile</span></Link>
         </li>
         <li>
+          <Link to="/AboutUs">
+           <FontAwesomeIcon icon={faCircleInfo} className="icon" />
+          <span>About Us</span></Link>
+        </li>
+        
+        <li>
           <Link to="/Contact">
            <FontAwesomeIcon icon={faAddressCard} className="icon" />
-          <span>Contact</span></Link>
+          <span>Contact Us</span></Link>
         </li>
+        
       </ul>
     </div>
   );

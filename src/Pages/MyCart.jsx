@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/MyCart.css";
-
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+   faTrash,
+ 
+} from '@fortawesome/free-solid-svg-icons';
 const MyCart = ({ cart, setCart }) => {
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
   const deleteProduct = (index) => {
@@ -8,9 +13,10 @@ const MyCart = ({ cart, setCart }) => {
     setCart(newCart);
   };
 
+
   return (
     <div className="my-cart">
-      <h1>Shopping Cart</h1>
+       <Link to="/ShopProduct" className="tshop">Shopping Cart</Link>
 
       {cart.length === 0 ? (
         <div className="empty-cart">
@@ -28,7 +34,8 @@ const MyCart = ({ cart, setCart }) => {
                   <h3>{item.name}</h3>
                   <p>{item.category}</p>
                   <h3>${item.price.toFixed(2)}</h3>
-                  <button onClick={() => deleteProduct(index)}>Delete</button>
+                  <p></p>
+                  <button onClick={() => deleteProduct(index)} className="delete"><FontAwesomeIcon icon={faTrash}/>Delete</button>
                 </div>
               </div>
             ))}
