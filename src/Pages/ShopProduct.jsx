@@ -5,8 +5,8 @@ import image1 from "../assets/image.png";
 import wallet from "../assets/wallet.png";
 import DriftEverydayBottle from "../assets/DriftEverydayBottle.png";
 import Smartwatch from "../assets/Smartwatch.png";
-import Velora from "../assets/velora.png";
-import  { useState } from "react";
+import Velora from "../assets/Velora.png";
+import { useState } from "react";
 const ShopProduct = ({ addToCart }) => {
   const products = [
     {
@@ -39,13 +39,12 @@ const ShopProduct = ({ addToCart }) => {
       price: 199.99,
     },
     {
-      id  : 5,
+      id: 5,
       image: Velora,
       category: "Accessories",
       name: "Velora",
       price: 19.99,
     },
-    
   ];
   const [selectedCategory, setSelectedCategory] = useState("All");
   const categories = ["All", "Electronic", "Accessories", "Lifestyle"];
@@ -56,7 +55,11 @@ const ShopProduct = ({ addToCart }) => {
   return (
     <div className="shop-product">
       <h1 className="shop-title">Shop Products</h1>
-      <input className="shop-input" type="text" placeholder="Search product..." />
+      <input
+        className="shop-input"
+        type="text"
+        placeholder="Search product..."
+      />
 
       <div className="categories">
         {categories.map((category) => (
