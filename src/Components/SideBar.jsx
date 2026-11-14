@@ -15,7 +15,7 @@ const SideBar = () => {
       <h2>MENU</h2>
       <ul>
         <li>
-          <Link to="/ShopProduct">
+          <Link to="/">
             <FontAwesomeIcon icon={faBagShopping} className="icon" />
             <span> Shop Product</span>
           </Link>

@@ -3,7 +3,7 @@
   min-height: calc(100vh - 50px);
   background-color: rgb(255, 255, 255, 0.55);
   backdrop-filter: blur(12px);
-  padding: 28px, 20px;
+  padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.03);
   display: flex;

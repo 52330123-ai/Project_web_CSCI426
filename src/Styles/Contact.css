@@ -119,3 +119,20 @@ input,textarea{
     width: 300px;
     height: 40px;
 }
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}

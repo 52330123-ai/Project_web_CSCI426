@@ -1,8 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .flex {
   display: flex;
-  gap: 20px; 
+  flex: 1;
+  min-width: 0;
+  gap: 0;
 }
 
 .contant {
   flex: 1;
+  min-width: 0;
 }

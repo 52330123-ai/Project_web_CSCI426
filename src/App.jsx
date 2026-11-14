@@ -9,6 +9,7 @@ import MyProfile from "./Pages/MyProfile";
 import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
 import Footer from "./Components/Footer";
+import "./Styles/Responsive.css";
 const App = () => {
   const [Cart, setCart] = useState([]);
   const addToCart = (product) => {
@@ -23,7 +24,7 @@ const App = () => {
           <div className="contant">
             <Routes>
               <Route
-                path="ShopProduct"
+                path="/"
                 element={<ShopProduct addToCart={addToCart} />}
               />
               <Route
